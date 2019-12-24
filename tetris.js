@@ -1,6 +1,7 @@
 const canvas = document.getElementById('tetris')
 const ctx = canvas.getContext('2d')
 const playBtn = document.getElementById('play-btn')
+const audioBtn = document.getElementById('audio-btn')
 let gamePlaying = false
 const colors = [
   null,
@@ -12,7 +13,8 @@ const colors = [
   '#FF0000',
   '#02FFFF'
 ]
-const music = document.getElementById('music')
+let music = document.getElementById('music')
+let audio = true
 
 playBtn.addEventListener('click', () => {
   if (gamePlaying === false) {
@@ -24,6 +26,16 @@ playBtn.addEventListener('click', () => {
     gamePlaying = false
     music.pause()
     playBtn.innerHTML = 'PLAY'
+  }
+})
+
+audioBtn.addEventListener('click', () => {
+  audio = (!audio)
+
+  if (audio) {
+    music.volume = 0.5
+  } else {
+    music.volume = 0
   }
 })
 
