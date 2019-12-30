@@ -1,0 +1,33 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "Passion project, tribute to one of my favourite games.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vesprawn/tetris.git"
+  },
+  "keywords": [
+    "tetris",
+    "tribute"
+  ],
+  "author": "Vesprawn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vesprawn/tetris/issues"
+  },
+  "homepage": "https://github.com/Vesprawn/tetris#readme",
+  "dependencies": {
+    "electron": "^7.1.7",
+    "knex": "^0.20.6",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.8"
+  }
+}
