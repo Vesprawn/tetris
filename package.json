@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Vesprawn/tetris#readme",
   "dependencies": {
-    "electron": "^7.1.7",
+    "electron": "^15.5.5",
     "knex": "^0.20.6",
     "sqlite3": "^4.1.1"
   },
